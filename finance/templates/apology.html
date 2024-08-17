@@ -1,0 +1,14 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Apology
+{% endblock %}
+
+{% block main %}
+    <h1>{{ top }}</h1>
+    <img src="{{ meme_url }}" alt="Meme" class="img-fluid">
+    <p class="text-danger">{{ bottom }}</p>
+    {% if redirect_url and button_text %}
+    <a href="{{ redirect_url }}" class="btn btn-primary">{{ button_text }}</a>
+    {% endif %}
+{% endblock %}

@@ -1,0 +1,17 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Profile
+{% endblock %}
+
+{% block main %}
+    <h2>Profile</h2>
+    <form action="/profile" method="post">
+        <div class="mb-3">
+            <button class="btn btn-primary" type="submit" name="change_username">Change Username</button>
+        </div>
+        <div class="mb-3">
+            <button class="btn btn-primary" type="submit" name="change_password">Change Password</button>
+        </div>
+    </form>
+{% endblock %}
